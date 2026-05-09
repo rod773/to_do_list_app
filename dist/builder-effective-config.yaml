@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.minimal.todo
+productName: Minimal To-Do
+win:
+  target:
+    - portable
+files: []
+electronVersion: 28.3.3
