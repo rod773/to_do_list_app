@@ -1,0 +1,40 @@
+{
+  "name": "minimal-todo-app-desktop",
+  "version": "1.0.0",
+  "description": "A desktop version of the Minimal To-Do List Application using Electron.",
+  "keywords": [
+    "todo",
+    "electron",
+    "desktop"
+  ],
+  "homepage": "https://github.com/rod773/to_do_list_app#readme",
+  "bugs": {
+    "url": "https://github.com/rod773/to_do_list_app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rod773/to_do_list_app.git"
+  },
+  "license": "MIT",
+  "author": "Your Name",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^23.0.0"
+  },
+  "build": {
+    "appId": "com.minimal.todo",
+    "productName": "Minimal To-Do",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
